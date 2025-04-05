@@ -48,3 +48,7 @@ data panel_2;
     professionnel_long = 0;
     deuxieme_cycle = 0;
     troisieme_cycle = 0;
+sexeN = 1;
+masculin = 0;
+feminin = 0;
+    
