@@ -51,4 +51,11 @@ data panel_2;
 sexeN = 1;
 masculin = 0;
 feminin = 0;
-    
+
+    if etudes = "primaire" then primaire = 1;
+    else if etudes = "secondaire" then secondaire = 1;
+    else if etudes = "professionnel court" then professionnel_court = 1;
+    else if etudes = "professionnel long" then professionnel_long = 1;
+    else if etudes = "deuxieme cycle" then deuxieme_cycle = 1;
+    else if etudes = "troisieme cycle" then troisieme_cycle = 1;
+ 
