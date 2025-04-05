@@ -1,4 +1,4 @@
-/* 1. Import the data to create a SAS table */
+/* 1. Importer le fichier Panel95light.csu pour en faire une table SAS.*/
 LIBNAME lib "/home/u64135292/sasuser.v94";
 
 Proc import DATAFILE="~sasuser.v94/Panel95light.csv"
@@ -8,7 +8,7 @@ Proc import DATAFILE="~sasuser.v94/Panel95light.csv"
 GUESSINGROWS=MAX;
 run;
 
-/* 2. Graphically represent the distribution of the variables lw (logarithm of hourly wage), etudes (education level), sexe (gender), exper (potential experience, in months), mois (number of months since the beginning of the panel, in January 95). Hint: appropriately adapt the type of graph to each variable. Your graphs should be prettier and more informative than those given in Applied Econometrics II. */
+/* 2. Représenter graphiquement la distribution des variables lu (logarithme du salaire horaire), etudes, sexe, exper (ex- périence potentielle, en mois), mois (nombre de mois depuis le début du panel, en janvier 95). Indication : bien adapter le type de graphique à chaque variable. Vos graphiques devraient être plus jolis et plus parlants que ceux donés en Econométrie appliquée II.*/
 PROC UNIVARIATE DATA = panel;
   VAR lw;
   HISTOGRAM lw / NORMAL;
