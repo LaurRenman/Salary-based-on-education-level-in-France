@@ -59,5 +59,8 @@ feminin = 0;
     else if etudes = "deuxieme cycle" then deuxieme_cycle = 1;
     else if etudes = "troisieme cycle" then troisieme_cycle = 1;
 
-if sexe = "Femme" then sexeN = 2;
-if sexe = "Homme" then masculin = 1;
+    if sexe = "Femme" then sexeN = 2;
+    if sexe = "Homme" then masculin = 1;
+    else if sexe = "Femme" then feminin = 1;
+run;
+
