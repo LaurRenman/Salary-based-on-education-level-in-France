@@ -43,3 +43,8 @@ quit;
 data panel_2;
     set panel;
     primaire = 0;
+    secondaire = 0;
+    professionnel_court = 0;
+    professionnel_long = 0;
+    deuxieme_cycle = 0;
+    troisieme_cycle = 0;
