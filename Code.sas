@@ -38,3 +38,8 @@ proc gchart data=panel;
     title "Distribution du sexe";
 run;
 quit;
+
+/* 3. Générer des indicatrices pour chaque niveau d'études, ainsi que la variable numérique sexN, qui vaut 1 pour les hommes, 2 pour les femmes, puis des indicatrices de sexe masculin et féminin.*/
+data panel_2;
+    set panel;
+    primaire = 0;
